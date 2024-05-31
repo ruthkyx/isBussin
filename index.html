@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bussin</title>
+</head>
+<body>
+    <h1 id="pageTitle">WHERE MY BUS?!</h1>
+
+    <div id="welcomeUser">
+        <h3 id="helloName"></h3>
+        <label for="userInputName">your name pls: </label>
+        <input type="text" id="userInputName" placeholder="name here">
+        <button type="submit" id="submitNameBtn">ok</button>
+    </div>
+    <br>
+
+    <h2>check here</h2>
+
+    <div id="busStop" class="busInfo">
+        <label for="busStopNumber">Bus Stop Number: </label>
+        <input id="busStopNumber" type="number" placeholder="bus stop number">
+        <button type="submit" id="getStopNo">enter</button>
+    </div>
+    <div id="serviceList"></div>
+    <div id="busTime">
+        <p id="nextBus"></p>
+        <p id="nextBus2"></p>
+        <p id="nextBus3"></p>
+    </div>
+
+    <script src="key.js"></script>
+    <script>
+        const API_KEY = window.BUS_API_KEY;
+    </script>
+        <script src="index.js"></script>
+</body>
+</html>
